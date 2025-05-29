@@ -49,3 +49,57 @@ header {
     background-color: #ddd;
     border-radius: 2vh;
 }
+
+.tituloPagina{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 5vh;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.contenedor-cajas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;      /* apila los elementos verticalmente */
+    justify-content: center;     /* centra verticalmente el contenido */
+    align-items: center;         /* centra horizontalmente */
+    height: 400px;               /* define altura fija para centrar dentro de ella */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.caja button {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.caja button:hover {
+    background-color: #444;
+}
+
+.imagen-proyecto1 {
+    width: 120px;         /* o un valor fijo como 200px */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
