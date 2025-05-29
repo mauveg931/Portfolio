@@ -42,12 +42,12 @@ header {
     margin-left: 3vh;
     font-size: 3vh;
     border-radius: 2vh;
-    transition: background 0.3s;
+    transition: color 0.3s;
 }
 
 .menu-horizontal a:hover {
-    background-color: #ddd;
     border-radius: 2vh;
+    color: #c20000;
 }
 
 .tituloPagina{
@@ -59,38 +59,79 @@ header {
     color: #000000;
 }
 
+.tabla-informacion {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    border: 1px solid #000000;
+}
+
+.curriculum {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+section h2 {
+    border-bottom: 2px solid #c50000;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
 .contenedor-cajas {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 40px;
-    flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .caja {
+    font-family: "Montserrat", sans-serif;
     display: flex;
-    flex-direction: column;      /* apila los elementos verticalmente */
-    justify-content: center;     /* centra verticalmente el contenido */
-    align-items: center;         /* centra horizontalmente */
-    height: 400px;               /* define altura fija para centrar dentro de ella */
+    flex-direction: column;      
+    justify-content: center;    
+    align-items: center;         
+    height: 400px;
+    width: 50vh;               
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    border: 2px solid #000;
+    position: relative;
 }
 
 .caja button {
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     background-color: #000;
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    margin: 0;
+    display: block;
 }
 
 .caja button:hover {
@@ -98,8 +139,74 @@ header {
 }
 
 .imagen-proyecto1 {
-    width: 120px;         /* o un valor fijo como 200px */
+    width: 16vh;         
+    height: auto;
+    padding-bottom: 9vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.imagen-proyecto2 {
+    width: 20vh; 
+    padding: 2vh;  
+    padding-bottom: 8vh; 
+    height: auto;    
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.imagen-proyecto3 {
+    width: 20vh;      
+    padding: 3vh;   
+    padding-bottom: 9vh;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 30px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.footer-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #ff0000;
+}
+
+.footer-redes a {
+  color: #f0f0f0;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+  color: #00aced;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  color: #777;
 }
