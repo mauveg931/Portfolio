@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.tituloHeader {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 5vh;
+    font-style: normal;
+    text-align: left;
+    margin-left: 6vh;
+    background-color: #000000;
+}
+
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; 
+    padding: 10px 20px;
+}
+
+.menu-horizontal li {
+    display: inline;
+}
+
+.menu-horizontal a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 12px;
+    margin-left: 3vh;
+    font-size: 3vh;
+    border-radius: 2vh;
+    transition: background 0.3s;
+}
+
+.menu-horizontal a:hover {
+    background-color: #ddd;
+    border-radius: 2vh;
+}
