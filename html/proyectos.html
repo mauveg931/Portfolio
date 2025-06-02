@@ -22,28 +22,76 @@
         </nav>
     </header>
     <main>
-        <h1 class="tituloPagina">PROYECTOS</h1>
-        <div class="contenedor-cajas">
+        <h1 id="titulo" class="tituloPagina">PROYECTOS</h1>
+        <div id="proyectos" class="contenedor-cajas">
             <div class="caja">
 
                 <h2>Memorium</h2>
                 <p>Juego de memoria.</p>
                 <img src="../img/iconoWeb.png" alt="Portada del proyecto" class="imagen-proyecto1">
-                <button>Ver más</button>
+                <button class="botonJugar" id="verMemorium">Ver más</button>
             </div>
             <div class="caja">
                 <h2>CalcuRedes</h2>
                 <p>Aplicación para calcular diferentes características de una red.</p>
                 <img src="../img/prueba2.png" alt="Portada del proyecto" class="imagen-proyecto2">
-                <button>Ver más</button>
+                <button class="botonJugar" id="verCalcuRedes">Ver más</button>
             </div>
             <div class="caja">
                 <h2>Mapis</h2>
                 <p>Aplicación para gestionar mapas.</p>
                 <img src="../img/favicono.png" alt="Portada del proyecto" class="imagen-proyecto3">
-                <button>Ver más</button>
+                <button class="botonJugar" id="verMapis">Ver más</button>
             </div>
         </div>
+
+        <div id="memoriumDetalles" style="display: none;">
+            <h1 class="tituloPagina">Memorium</h1>
+            <h2 class="explicaciones">Juego de memoria donde debes encontrar pares de cartas iguales.</h2>
+            <h3 class="explicaciones">Desarrollado con HTML, CSS y JavaScript.</h3>
+            <p class="explicaciones">Inicio de la página</p>
+            <img src="../img/capsMem/inicio.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Asi es como se vería el juego</p>
+            <img src="../img/capsMem/juego.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Hicimos un historial para registrar todas las partidas</p>
+            <img src="../img/capsMem/Historial.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Y también un ranking para ver las diferentes puntuaciones de los jugadores</p>
+            <img src="../img/capsMem/ranking.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Por último hicimos un huevo de pascua que consistía en que, si escribías snake en
+                el nombre de usuario te redirigía al juego de Snake</p>
+            <img src="../img/capsMem/snake.PNG" class="caps2" alt="Portada del proyecto">
+                <div class="displayBotones">
+            <button onclick="window.open('https://github.com/mauveg931/PROYECTO1_B', '_blank')" class="botonJugar">Ver repositorio</button>
+            <button onclick="window.open('https://mauveg931.github.io/PROYECTO1_B/', '_blank')"class="botonJugar">Jugar</button>
+            <button id="volverMemorium" class="botonJugar">Volver</button>
+            </div>
+        </div>
+
+        <div id="calcuRedesDetalles" style="display: none;">
+            <h1 class="tituloPagina">CalcuRedes</h1>
+            <h2 class="explicaciones">Aplicación para calcular diferentes características de una red.</h2>
+            <h3 class="explicaciones">Desarrollado con HTML, CSS y JavaScript.</h3>
+            <p class="explicaciones">Inicio de la página</p>
+            <img src="../img/capsCalc/inicio.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Detecta automáticamente tu IP pública y si le das a CALCULAR te asignara una
+                máscara predefinida</p>
+            <img src="../img/capsCalc/1.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">También te muestra información general sobre las subredes</p>
+            <img src="../img/capsCalc/2.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Y por último, si aplicas una máscara de subred, te mostrara información detallada
+                acerca de todas las subredes</p>
+            <img src="../img/capsCalc/3.PNG" class="caps" alt="Portada del proyecto">
+            <div class="displayBotones">
+                <button onclick="window.open('https://github.com/jiuugo/CalcuRedes')" class="botonJugar">Ver
+                    repositorio</button>
+                <button onclick="window.open('https://jiuugo.github.io/CalcuRedes/')"
+                    class="botonJugar">Jugar</button>
+
+                <button id="volverCalcuRedes" class="botonJugar">Volver</button>
+            </div>
+        </div>
+
+        <div id="mapisDetalles" style="display: none;"></div>
 
     </main>
     <footer class="footer">
@@ -62,6 +110,7 @@
             &copy; 2025 Mauro Vega. Todos los derechos reservados.
         </div>
     </footer>
+    <script src="../js/scripts.js"></script>
 </body>
 
 
