@@ -10,36 +10,36 @@ addEventListener('DOMContentLoaded', () => {
 });
 
 function ocultaTitulo() {
-   const element = document.getElementById('titulo');
-   element.style.display = 'none';
+    const element = document.getElementById('titulo');
+    element.style.display = 'none';
 }
 
 function mostrarMemorium() {
-   ocultaTitulo();
-   const element = document.getElementById('proyectos');
-   proyectos.style.display = 'none';
-   const verMemorium = document.getElementById('memoriumDetalles');
-   verMemorium.style.display = 'block';
-   
+    ocultaTitulo();
+    const element = document.getElementById('proyectos');
+    proyectos.style.display = 'none';
+    const verMemorium = document.getElementById('memoriumDetalles');
+    verMemorium.style.display = 'block';
+
 
 }
 
 function mostrarCalcuRedes() {
-   ocultaTitulo();
-   const element = document.getElementById('proyectos');
-   proyectos.style.display = 'none';
-   const verCalcuRedes = document.getElementById('calcuRedesDetalles');
-   verCalcuRedes.style.display = 'block';
+    ocultaTitulo();
+    const element = document.getElementById('proyectos');
+    proyectos.style.display = 'none';
+    const verCalcuRedes = document.getElementById('calcuRedesDetalles');
+    verCalcuRedes.style.display = 'block';
 }
 
 function mostrarMapis() {
-   ocultaTitulo();
-   const element = document.getElementById('proyectos');
-   proyectos.style.display = 'none';
-   const verMapis = document.getElementById('mapisDetalles');
-   verMapis.style.display = 'block';
+    ocultaTitulo();
+    const element = document.getElementById('proyectos');
+    proyectos.style.display = 'none';
+    const verMapis = document.getElementById('mapisDetalles');
+    verMapis.style.display = 'block';
 }
 
-function volver(){
-   location.reload();
+function volver() {
+    location.reload();
 }
