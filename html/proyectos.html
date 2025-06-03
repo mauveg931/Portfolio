@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
+    <title>Mauro Vega</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="tituloHeader">Portfolio de Mauro Vega</h1>
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="titulo" class="tituloPagina">PROYECTOS</h1>
+        <div id="proyectos" class="contenedor-cajas">
+            <div class="caja">
+
+                <h2>Memorium</h2>
+                <p>Juego de memoria.</p>
+                <img src="../img/iconoWeb.png" alt="Portada del proyecto" class="imagen-proyecto1">
+                <button class="botonJugar" id="verMemorium">Ver más</button>
+            </div>
+            <div class="caja">
+                <h2>CalcuRedes</h2>
+                <p>Aplicación para calcular diferentes características de una red.</p>
+                <img src="../img/prueba2.png" alt="Portada del proyecto" class="imagen-proyecto2">
+                <button class="botonJugar" id="verCalcuRedes">Ver más</button>
+            </div>
+            <div class="caja">
+                <h2>Mapis</h2>
+                <p>Aplicación para gestionar mapas.</p>
+                <img src="../img/favicono.png" alt="Portada del proyecto" class="imagen-proyecto3">
+                <button class="botonJugar" id="verMapis">Ver más</button>
+            </div>
+        </div>
+
+        <div id="memoriumDetalles" style="display: none;">
+            <h1 class="tituloPagina">Memorium</h1>
+            <h2 class="explicaciones">Juego de memoria donde debes encontrar pares de cartas iguales.</h2>
+            <h3 class="explicaciones">Desarrollado con HTML, CSS y JavaScript.</h3>
+            <p class="explicaciones">Inicio de la página</p>
+            <img src="../img/capsMem/inicio.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Asi es como se vería el juego</p>
+            <img src="../img/capsMem/juego.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Hicimos un historial para registrar todas las partidas</p>
+            <img src="../img/capsMem/Historial.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Y también un ranking para ver las diferentes puntuaciones de los jugadores</p>
+            <img src="../img/capsMem/ranking.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Por último hicimos un huevo de pascua que consistía en que, si escribías snake en
+                el nombre de usuario te redirigía al juego de Snake</p>
+            <img src="../img/capsMem/snake.PNG" class="caps2" alt="Portada del proyecto">
+            <div class="displayBotones">
+                <button onclick="window.open('https://github.com/mauveg931/PROYECTO1_B', '_blank')"
+                    class="botonJugar">Ver repositorio</button>
+                <button onclick="window.open('https://mauveg931.github.io/PROYECTO1_B/', '_blank')"
+                    class="botonJugar">Jugar</button>
+                <button id="volverMemorium" class="botonJugar">Volver</button>
+            </div>
+        </div>
+
+        <div id="calcuRedesDetalles" style="display: none;">
+            <h1 class="tituloPagina">CalcuRedes</h1>
+            <h2 class="explicaciones">Aplicación para calcular diferentes características de una red.</h2>
+            <h3 class="explicaciones">Desarrollado con HTML, CSS y JavaScript.</h3>
+            <p class="explicaciones">Inicio de la página</p>
+            <img src="../img/capsCalc/inicio.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Detecta automáticamente tu IP pública y si le das a CALCULAR te asignara una
+                máscara predefinida</p>
+            <img src="../img/capsCalc/1.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">También te muestra información general sobre las subredes</p>
+            <img src="../img/capsCalc/2.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Y por último, si aplicas una máscara de subred, te mostrara información detallada
+                acerca de todas las subredes</p>
+            <img src="../img/capsCalc/3.PNG" class="caps" alt="Portada del proyecto">
+            <div class="displayBotones">
+                <button onclick="window.open('https://github.com/jiuugo/CalcuRedes')" class="botonJugar">Ver
+                    repositorio</button>
+                <button onclick="window.open('https://jiuugo.github.io/CalcuRedes/')" class="botonJugar">Ver
+                    APP</button>
+
+                <button id="volverCalcuRedes" class="botonJugar">Volver</button>
+            </div>
+        </div>
+
+        <div id="mapisDetalles" style="display: none;">
+            <h1 class="tituloPagina">Mapis</h1>
+            <h2 class="explicaciones">Aplicación para gestionar mapas.</h2>
+            <h3 class="explicaciones">Desarrollado con HTML, CSS y JavaScript.</h3>
+            <p class="explicaciones">Inicio de la página</p>
+            <img src="../img/capsMaps/inicio.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Presionando sobre el botón de las tres rayas se desplegará este menú con diferentes
+                opciones</p>
+            <img src="../img/capsMaps/1ç.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Tenemos una opción en la que hemos puesto unas localizaciones preestablecidas con
+                cuatro lugares de interés</p>
+            <img src="../img/capsMaps/2.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">A la hora de buscar una localización la puedes etiquetar con diferentes categorias
+                como iglesia, aeropuerto, parque, etc...</p>
+            <img src="../img/capsMaps/3.PNG" class="caps" alt="Portada del proyecto">
+            <p class="explicaciones">Por último el botón de mostrar sismos, linkeado a un xml que se va actualizando
+                cada semana</p>
+
+            <img src="../img/capsMaps/4.PNG" class="caps" alt="Portada del proyecto">
+
+            <p class="explicaciones">Y si presionas en el botón de limpiar mapa quedará tal que asi</p>
+            <img src="../img/capsMaps/1ç.PNG" class="caps" alt="Portada del proyecto">
+            <div class="displayBotones">
+                <button onclick="window.open('https://github.com/mauveg931/Mapis')" class="botonJugar">Ver
+                    repositorio</button>
+                <button onclick="window.open('https://mauveg931.github.io/Mapis/')" class="botonJugar">Ver APP</button>
+
+                <button id="volverMapis" class="botonJugar">Volver</button>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-info">
+                <h3>Mauro Vega</h3>
+                <p>Desarrollador Web | Portfolio 2025</p>
+            </div>
+            <div class="footer-redes">
+                <a href="https://github.com/mauveg931" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mauro-vega-506b491a8/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2025 Mauro Vega. Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+
+
+</html>
