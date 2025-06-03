@@ -22,6 +22,19 @@ header {
     background-color: #000000;
 }
 
+.cambiar-idioma {
+    left: 185vh;
+    top: 5vh;
+    background-color: #9e9e9e;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cambiar-idioma:hover {
+    background-color: #c50000;
+}
+
 .menu-horizontal {
     list-style: none;
     padding: 0;

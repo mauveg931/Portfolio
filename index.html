@@ -16,6 +16,8 @@
 <body>
     <header>
         <h1 class="tituloHeader">Portfolio de Mauro Vega</h1>
+        <button id="en" class="cambiar-idioma"><img src="https://flagcdn.com/us.svg" alt="USA Flag" width="24" height="16"></button>
+        <button id="es" class="cambiar-idioma"><img src="https://flagcdn.com/es.svg" alt="Bandera de España" width="24" height="16"></button>
         <nav>
             <ul class="menu-horizontal">
                 <li><a href="index.html">Inicio</a></li>
@@ -24,13 +26,15 @@
         </nav>
     </header>
     <main>
+    <!-- Contenido en Español -->
+    <div id="contenido-es">
         <h1 class="tituloPagina">Inicio</h1>
         <h2 class="tituloPagina">Bienvenido a mi portfolio</h2>
         <section class="curriculum">
             <section class="presentacion">
                 <h2>Datos personales</h2>
                 <ul>
-                    <li><strong>Nombre:</strong> Mauro Vega</li>
+                    <li><strong>Nombre:</strong> Mauro Vega Marcos</li>
                     <li><strong>Edad:</strong> 21 años</li>
                     <li><strong>Teléfono:</strong> 639369786</li>
                     <li><strong>Correo:</strong> maurovegamarcos@gmail.com</li>
@@ -40,8 +44,7 @@
             <section class="educacion">
                 <h2>Educación</h2>
                 <ul>
-                    <li>Técnico de Realización de Proyectos Audiovisuales – Instituto Maria Auxiliadora (2022 - 2024)
-                    </li>
+                    <li>Técnico de Realización de Proyectos Audiovisuales – Instituto Maria Auxiliadora (2022 - 2024)</li>
                     <li>Desarrollador de Aplicaciones Web – IES San Andrés (2024 - )</li>
                 </ul>
             </section>
@@ -49,7 +52,7 @@
             <section class="experiencia">
                 <h2>Experiencia laboral</h2>
                 <ul>
-                    <li> hola </li>
+                    <li>hola</li>
                 </ul>
             </section>
 
@@ -71,9 +74,59 @@
                 </ul>
             </section>
         </section>
+    </div>
 
+    <!-- Contenido en Inglés -->
+    <div id="contenido-en" style="display: none;">
+        <h1 class="tituloPagina">Home</h1>
+        <h2 class="tituloPagina">Welcome to my portfolio</h2>
+        <section class="curriculum">
+            <section class="presentacion">
+                <h2>Personal Information</h2>
+                <ul>
+                    <li><strong>Name:</strong> Mauro Vega Marcos</li>
+                    <li><strong>Age:</strong> 21 years old</li>
+                    <li><strong>Phone:</strong> 639369786</li>
+                    <li><strong>Email:</strong> maurovegamarcos@gmail.com</li>
+                </ul>
+            </section>
 
-    </main>
+            <section class="educacion">
+                <h2>Education</h2>
+                <ul>
+                    <li>Technician in Audiovisual Project Production – Instituto Maria Auxiliadora (2022 - 2024)</li>
+                    <li>Web Application Developer – IES San Andrés (2024 - )</li>
+                </ul>
+            </section>
+
+            <section class="experiencia">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>hello</li>
+                </ul>
+            </section>
+
+            <section class="habilidades">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Git and GitHub</li>
+                    <li>Adobe Premiere, Adobe Photoshop, Sony Vegas</li>
+                    <li>Teamwork and communication</li>
+                </ul>
+            </section>
+
+            <section class="idiomas">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Spanish: Native</li>
+                    <li>English: Intermediate (B1)</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+</main>
+
     <footer class="footer">
         <div class="footer-contenido">
             <div class="footer-info">
@@ -90,6 +143,7 @@
             &copy; 2025 Mauro Vega. Todos los derechos reservados.
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 
 
