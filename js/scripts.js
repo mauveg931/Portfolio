@@ -1,45 +1,76 @@
 
-addEventListener('DOMContentLoaded', () => {
-    document.getElementById('verMemorium').addEventListener('click', mostrarMemorium);
-    document.getElementById('verCalcuRedes').addEventListener('click', mostrarCalcuRedes);
-    document.getElementById('verMapis').addEventListener('click', mostrarMapis);
-    document.getElementById('volverMemorium').addEventListener('click', volver);
-    document.getElementById('volverCalcuRedes').addEventListener('click', volver);
-    document.getElementById('volverMapis').addEventListener('click', volver);
+    document.addEventListener('DOMContentLoaded', () => {
+        // Botones para cambiar de idioma
+        const botonEn = document.getElementById("en");
+        const botonEs = document.getElementById("es");
+        const contenidoEn = document.getElementById("contenido-en");
+        const contenidoEs = document.getElementById("contenido-es");
 
-});
+        if (botonEn && botonEs && contenidoEn && contenidoEs) {
+            botonEn.addEventListener("click", () => {
+                contenidoEs.style.display = "none";
+                contenidoEn.style.display = "block";
+            });
 
-function ocultaTitulo() {
-    const element = document.getElementById('titulo');
-    element.style.display = 'none';
-}
+            botonEs.addEventListener("click", () => {
+                contenidoEn.style.display = "none";
+                contenidoEs.style.display = "block";
+            });
+        } else {
+            console.error("❌ Uno o más elementos de idioma no se encontraron");
+        }
 
-function mostrarMemorium() {
-    ocultaTitulo();
-    const element = document.getElementById('proyectos');
-    proyectos.style.display = 'none';
-    const verMemorium = document.getElementById('memoriumDetalles');
-    verMemorium.style.display = 'block';
+        // Botones para ver proyectos
+        const memoriumBtn = document.getElementById('verMemorium');
+        const calcuRedesBtn = document.getElementById('verCalcuRedes');
+        const mapisBtn = document.getElementById('verMapis');
+        const volverMemoriumBtn = document.getElementById('volverMemorium');
+        const volverCalcuRedesBtn = document.getElementById('volverCalcuRedes');
+        const volverMapisBtn = document.getElementById('volverMapis');
 
+        if (memoriumBtn) memoriumBtn.addEventListener('click', mostrarMemorium);
+        if (calcuRedesBtn) calcuRedesBtn.addEventListener('click', mostrarCalcuRedes);
+        if (mapisBtn) mapisBtn.addEventListener('click', mostrarMapis);
+        if (volverMemoriumBtn) volverMemoriumBtn.addEventListener('click', volver);
+        if (volverCalcuRedesBtn) volverCalcuRedesBtn.addEventListener('click', volver);
+        if (volverMapisBtn) volverMapisBtn.addEventListener('click', volver);
+    });
 
-}
+    function ocultaTitulo() {
+        const titulo = document.getElementById('titulo');
+        if (titulo) titulo.style.display = 'none';
+    }
 
-function mostrarCalcuRedes() {
-    ocultaTitulo();
-    const element = document.getElementById('proyectos');
-    proyectos.style.display = 'none';
-    const verCalcuRedes = document.getElementById('calcuRedesDetalles');
-    verCalcuRedes.style.display = 'block';
-}
+    function mostrarMemorium() {
+        ocultaTitulo();
+        const proyectos = document.getElementById('proyectos');
+        const memorium = document.getElementById('memoriumDetalles');
+        if (proyectos && memorium) {
+            proyectos.style.display = 'none';
+            memorium.style.display = 'block';
+        }
+    }
 
-function mostrarMapis() {
-    ocultaTitulo();
-    const element = document.getElementById('proyectos');
-    proyectos.style.display = 'none';
-    const verMapis = document.getElementById('mapisDetalles');
-    verMapis.style.display = 'block';
-}
+    function mostrarCalcuRedes() {
+        ocultaTitulo();
+        const proyectos = document.getElementById('proyectos');
+        const calcu = document.getElementById('calcuRedesDetalles');
+        if (proyectos && calcu) {
+            proyectos.style.display = 'none';
+            calcu.style.display = 'block';
+        }
+    }
 
-function volver() {
-    location.reload();
-}
+    function mostrarMapis() {
+        ocultaTitulo();
+        const proyectos = document.getElementById('proyectos');
+        const mapis = document.getElementById('mapisDetalles');
+        if (proyectos && mapis) {
+            proyectos.style.display = 'none';
+            mapis.style.display = 'block';
+        }
+    }
+
+    function volver() {
+        location.reload();
+    }
