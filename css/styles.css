@@ -23,7 +23,7 @@ header {
 }
 
 .cambiar-idioma {
-    left: 50vh;
+    margin-left: 90vw;
     top: 6vh;
     position: relative;
     border-radius: 5px;
@@ -32,6 +32,8 @@ header {
     justify-content: center; 
     
 }
+
+
 
 .cambiar-idioma:hover {
     background-color: #000000;
@@ -213,17 +215,28 @@ li {
 }
 
 .caps {
-    height: 45vh;
     display: flex;
     margin: 0 auto;
-    width: 70vh;
+    width: 50vw;
 }
 
-.caps2 {
-    height: 42vh;
-    display: flex;
-    margin: 0 auto;
-    width: 70vh;
+@media (max-width: 1400px) {
+    .caps {
+        width: 85vw;
+    }
+    .cambiar-idioma {
+        top: 0;
+        position: relative;
+        margin-left: 10vh;
+
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .caps2 {
+        width: 85vw;
+    }
 }
 
 .displayBotones {
@@ -236,7 +249,7 @@ li {
 }
 
 .displayBotones button {
-    margin: 5vh;
+    margin: 2vw;
 }
 
 .footer {
