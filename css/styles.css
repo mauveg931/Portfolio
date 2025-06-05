@@ -23,8 +23,8 @@ header {
 }
 
 .cambiar-idioma {
-    left: 185vh;
-    top: 5vh;
+    left: 50vh;
+    top: 6vh;
     position: relative;
     border-radius: 5px;
     cursor: pointer;             /* Activa Flexbox */
@@ -216,13 +216,14 @@ li {
     height: 45vh;
     display: flex;
     margin: 0 auto;
+    width: 70vh;
 }
 
 .caps2 {
     height: 42vh;
     display: flex;
     margin: 0 auto;
-    width: 91vh;
+    width: 70vh;
 }
 
 .displayBotones {
