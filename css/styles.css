@@ -25,14 +25,17 @@ header {
 .cambiar-idioma {
     left: 185vh;
     top: 5vh;
-    background-color: #9e9e9e;
     position: relative;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer;             /* Activa Flexbox */
+    align-items: center;         /* Centra verticalmente */
+    justify-content: center; 
+    
 }
 
 .cambiar-idioma:hover {
-    background-color: #c50000;
+    background-color: #000000;
+    transition: background-color 0.3s;
 }
 
 .menu-horizontal {
@@ -272,7 +275,7 @@ li {
 }
 
 .footer-redes a:hover {
-    color: #00aced;
+    color: #a50000;
 }
 
 .footer-copy {
